@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Section</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleAnswer(element) {
+            element.classList.toggle("active");
+            var answer = element.querySelector(".faq-answer");
+            var icon = element.querySelector(".icon");
+            if (element.classList.contains("active")) {
+                answer.style.maxHeight = answer.scrollHeight + "px";
+                icon.textContent = '+';
+            } else {
+                answer.style.maxHeight = 0;
+                icon.textContent = '+';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="faq-container">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq">
+            <div class="faq-question" onclick="toggleAnswer(this)">
+                <p>What is your car rental agency? <span class="icon">+</span></p>
+                <div class="faq-answer">
+                    <p>Our car rental agency offers a wide selection of vehicles for rent, including sedans, SUVs, and trucks, to meet your transportation needs for any occasion.</p>
+                </div>
+            </div>
+            <div class="faq-question" onclick="toggleAnswer(this)">
+                <p>How much does it cost to rent a car? <span class="icon">+</span></p>
+                <div class="faq-answer">
+                    <p>Rental costs vary based on the type of vehicle, rental duration, and additional options. Our prices start from $25 per day for economy cars. Please visit our pricing page for detailed information.</p>
+                </div>
+            </div>
+            <div class="faq-question" onclick="toggleAnswer(this)">
+                <p>Where can I pick up and drop off the car? <span class="icon">+</span></p>
+                <div class="faq-answer">
+                    <p>You can pick up and drop off your rental car at any of our convenient locations across the city. We also offer airport pickup and drop-off services. Check our locations page for more details.</p>
+                </div>
+            </div>
+            <div class="faq-question" onclick="toggleAnswer(this)">
+                <p>What is your cancellation policy? <span class="icon">+</span></p>
+                <div class="faq-answer">
+                    <p>We offer a flexible cancellation policy. You can cancel your reservation for free up to 24 hours before the pickup time. For cancellations made less than 24 hours in advance, a small fee may apply.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

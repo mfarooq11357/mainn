@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Agency</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+
+        <div class="logo">
+            <!-- <img width="100px" src="googlelogo_color_272x92dp.png" alt="Logo"> -->
+            <span style="color: red; font-weight: bold;">U</span>
+            <span style="color: white; font-weight: bold;">F</span>
+            <span style="color: orange; font-weight: bold;">A</span>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./services/index.html">Services</a></li>
+            <li><a href="./FAQ/index.html">Reviews &FAQs</a></li>
+            <li><a href="./Contact us/index.html">Contact Us</a></li>
+            <li class="auth-buttons">
+                <button class="login">Login</button>
+                <button class="register">Register</button>
+            </li>
+        </ul>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+    </nav>
+    <header>
+        <div class="header-content">
+            <h1>Start The New Dream!<br>A New Journey!<br>Let's Go!!</h1>
+            <button class="book-now">Book Now!</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Countries We Are Available</h1>
+        <div class="cities">
+            <div class="city">
+                <img  src="./public/background.jpg" alt="Los Angeles">
+                <p>Los Angeles</p>
+            </div>
+            <div class="city">
+                <img src="./public/background.jpg" alt="Los Angeles">
+                <p>Los Angeles</p>
+            </div>
+            <div class="city">
+                <img src="./public/background.jpg" alt="Los Angeles">
+                <p>Los Angeles</p>
+            </div>
+            <div class="city">
+                <img  src="./public/background.jpg" alt="Los Angeles">
+                <p>Los Angeles</p>
+            </div>
+            <div class="city">
+                <img  src="./public/background.jpg" alt="Los Angeles">
+                <p>Los Angeles</p>
+            </div>
+            <div class="city">
+                <img  src="./public/background.jpg" alt="Los Angeles">
+                <p>Los Angeles</p>
+            </div>
+        </div>
+
+
+        <h1> Put a Glance on our Growth</h1>
+        <div class="cities ">
+            <div class="city citiess">
+                <img  src="./public/background.jpg" alt="Los Angeles">
+                <p>Los Angeles</p>
+            </div>
+            <div class="city citiess">
+                <img  src="./public/background.jpg" alt="Los Angeles">
+                <p>Los Angeles</p>
+            </div>
+            <div class="city citiess">
+                <img  src="./public/background.jpg" alt="Los Angeles">
+                <p>Los Angeles</p>
+            </div>
+        </div>
+       
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024
+
+            <span style="color: red; font-weight: bold;"> U</span>
+            <span style="color: white; font-weight: bold;">F</span>
+            <span style="color: orange; font-weight: bold;">A </span>
+            Car Rental Agency. All rights reserved.
+        </p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('menu-toggle').addEventListener('click', function () {
+                var menu = document.querySelector('nav ul');
+                menu.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+
+</html>
